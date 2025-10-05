@@ -52,7 +52,10 @@ public class Project
 
         public string? Status { get; set; }
         
-    }
+        // One-to-many: A project can have many ProjectTasks
+        public List<ProjectTask>? Tasks { get; set; } = new();
+
+}
     
     
    
