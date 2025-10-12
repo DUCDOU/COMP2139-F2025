@@ -3,6 +3,10 @@
 @model List<Project>     
 @{ 
     ViewData["Title"] = "Projects"; 
+    
+    //Lab6 - Search Parameters
+    bool searchPerformed = ViewData["SearchPerformed"] as bool? ?? false;
+    string searchString = ViewData["SearchString"] as string;
 } 
 <h2>Projects</h2> 
 <!--// Lab4 - Part5 - #1 
@@ -32,11 +36,11 @@
                     <!--"Details"-->    
                     <a asp-action="Details" asp-route-id="@project.ProjectId" class="btn btn-info">Details</a> 
                     <!--Edit--> 
-                    <a asp-action="Edit" asp-route-id="@project.ProjectId" class="btn btn-danger">Delete</a> 
+                    <a asp-action="Edit" asp-route-id="@project.ProjectId" class="btn btn-secondary">Edit</a> 
                     <!--Delete--> 
                     <a asp-action="Delete" asp-route-id="@project.ProjectId" class="btn btn-danger">Delete</a> 
                     <!--View Tasks--> 
-                    <a asp-controller="ProjectTask" asp-action="Index" asp-route-projectId="@project.ProjectId">View Task</a> 
+                    <a asp-controller="ProjectTask" asp-action="Index" asp-route-projectId="@project.ProjectId" class="btn btn-success">View Task</a> 
                 </td>  
                 <!-- Render other project properties as needed --> 
             </tr> 
@@ -46,5 +50,12 @@
 } 
 else 
 { 
-    <p>No projects available.</p> 
+    if (searchPerformed)
+    {   
+        <p>No project names with name "@searchString" were found. </p>
+    }
+    else
+    {
+        <p> No projects available </p>
+    }
 }

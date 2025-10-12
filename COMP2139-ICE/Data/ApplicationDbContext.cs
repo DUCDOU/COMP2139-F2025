@@ -9,4 +9,21 @@ public class ApplicationDbContext : DbContext
     public DbSet<Project> Projects { get; set; }
     public DbSet<ProjectTask> ProjectTasks { get; set; }
     
+    //Lab6
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        //Define One-to-Many Relationship: One Project has many ProjectTasks
+        modelBuilder.Entity<Project>()
+            .HasMany(p => p.Tasks) //One Project has many ProjectTasks
+            .WithOne(t => t.Project) // Each ProjectTask belong to one Project
+            .HasForeignKey(t => t.ProjectId) // Foreign key in ProjectTask table
+            .OnDelete(DeleteBehavior.Cascade);
+        
+        // Cascade delete ProjectTasks when a Project is deleted
+        // Seeding Projects
+        modelBuilder.Entity<Project>().HasData(
+            new Project { ProjectId = 100, Name = "Assignment 1", Description = "COMP2139 Assignment 1" },
+            new Project { ProjectId = 101, Name = "Assignment 2", Description = "COMP2139 Assignment 2" }
+        );
+    }
 }
