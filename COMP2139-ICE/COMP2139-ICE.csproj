@@ -22,4 +22,30 @@
       <Folder Include="Controllers\Home1\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\ProjectTask\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ProjectTask\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ProjectTask\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ProjectTask\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ProjectTask\index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Project\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Project\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Project\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Project\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Project\index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\ProjectTask\Create.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\ProjectTask\Delete.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\ProjectTask\Details.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\ProjectTask\Edit.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\ProjectTask\index.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\Project\Create.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\Project\Delete.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\Project\Details.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\Project\Edit.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\Project\index.cshtml" />
+    </ItemGroup>
+
 </Project>
