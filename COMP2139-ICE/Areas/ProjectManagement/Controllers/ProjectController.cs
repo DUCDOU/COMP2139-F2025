@@ -16,19 +16,14 @@ public class ProjectController : Controller
         _context = context;
     }
     [HttpGet ("")]
-    public IActionResult Index()
+    public async Task<IActionResult> Index()//Lab9
     {  /* 
         var projects = new List<Project>()
         {
             new Project { ProjectId = 1, Name = "Project 1", Description = "First Project" },
         }
         ;*/
-        var projects = _context.Projects.ToList();
-        if (projects == null)
-        {
-            return NotFound(); 
-        }
-        
+        var projects = await _context.Projects.ToListAsync();
         return View(projects);
         
     }
