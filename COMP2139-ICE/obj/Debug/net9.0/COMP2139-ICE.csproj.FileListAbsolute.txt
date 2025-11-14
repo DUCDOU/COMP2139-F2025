@@ -306,3 +306,4 @@ C:\Users\DANIEL\RiderProjects\COMP2139-ICE\COMP2139-ICE\obj\Debug\net9.0\rjsmraz
 C:\Users\DANIEL\RiderProjects\COMP2139-ICE\COMP2139-ICE\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
 C:\Users\DANIEL\RiderProjects\COMP2139-ICE\COMP2139-ICE\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\DANIEL\RiderProjects\COMP2139-ICE\COMP2139-ICE\obj\Debug\net9.0\compressed\2lpzs2ad9x-r4pqqh7w5e.gz
+C:\Users\DANIEL\RiderProjects\COMP2139-ICE\COMP2139-ICE\obj\Debug\net9.0\compressed\gcgbshnl1y-2w5tjl2gt6.gz
