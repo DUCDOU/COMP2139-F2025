@@ -413,3 +413,8 @@ C:\Users\DANIEL\RiderProjects\COMP2139-ICE\COMP2139-ICE\bin\Debug\net9.0\runtime
 C:\Users\DANIEL\RiderProjects\COMP2139-ICE\COMP2139-ICE\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\DANIEL\RiderProjects\COMP2139-ICE\COMP2139-ICE\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\DANIEL\RiderProjects\COMP2139-ICE\COMP2139-ICE\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\DANIEL\RiderProjects\COMP2139-ICE\COMP2139-ICE\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
+C:\Users\DANIEL\RiderProjects\COMP2139-ICE\COMP2139-ICE\bin\Debug\net9.0\MailKit.dll
+C:\Users\DANIEL\RiderProjects\COMP2139-ICE\COMP2139-ICE\bin\Debug\net9.0\MimeKit.dll
+C:\Users\DANIEL\RiderProjects\COMP2139-ICE\COMP2139-ICE\bin\Debug\net9.0\Polly.dll
+C:\Users\DANIEL\RiderProjects\COMP2139-ICE\COMP2139-ICE\bin\Debug\net9.0\Polly.Core.dll

@@ -1,3 +1,6 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+
 <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container-fluid">
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-star"></i>COMP2139 GBC Project Management – Gia Duc Can</a>
@@ -40,6 +43,35 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="ProjectManagement" asp-controller="Project" asp-action="Index"><i class="fa-solid fa-lock"></i>Project</a>
                     </li>
+                    
+                    @if(SignInManager.IsSignedIn(User))
+                    {
+                    <li class="nav-item">
+                        <a class="nav-link text-dark"
+                           asp-area="Identity"
+                           asp-page="/Account/Manage/Index" title="Manage your account"><i class="fa fa-user-circle"></i> Profile</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <form asp-area="Identity" asp-page="/Account/Logout" method="post">
+                            <button type="submit" class="nav-link btn btn-link text-dark" style="cursor:pointer">Logout</button>
+                        </form>
+                    </li>
+                    }
+                    else
+                    {
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="Identity"
+                           asp-page="/Account/Login"><i class="fa fa-sign-in-alt"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="Identity"
+                           asp-page="/Account/Register"><i class="fa fa-user-plus"></i> Register</a>
+                    </li>
+                    }
+                    
+                    
+                    
                 </ul>
             </div>
         </div>
